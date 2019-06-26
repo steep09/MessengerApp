@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		A789713922C3AEBE00DA53F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A789713822C3AEBE00DA53F5 /* Assets.xcassets */; };
 		A789713C22C3AEBE00DA53F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A789713A22C3AEBE00DA53F5 /* LaunchScreen.storyboard */; };
 		A789714922C3B12500DA53F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A789714822C3B12500DA53F5 /* GoogleService-Info.plist */; };
+		A789714B22C3B52900DA53F5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789714A22C3B52900DA53F5 /* DataService.swift */; };
 		F40D028BF061CCB6C13C6879 /* Pods_messengerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C9E8BE57384C661B14FBF4 /* Pods_messengerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		A789713B22C3AEBE00DA53F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A789713D22C3AEBE00DA53F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A789714822C3B12500DA53F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A789714A22C3B52900DA53F5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AFE7C2905534B033CD5FD837 /* Pods-messengerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messengerApp.debug.xcconfig"; path = "Target Support Files/Pods-messengerApp/Pods-messengerApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +52,6 @@
 				AFE7C2905534B033CD5FD837 /* Pods-messengerApp.debug.xcconfig */,
 				806CAFED470A112FE349C144 /* Pods-messengerApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -123,6 +124,7 @@
 		A789714722C3AF6900DA53F5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A789714A22C3B52900DA53F5 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -254,6 +256,7 @@
 				A789713422C3AEBD00DA53F5 /* SecondViewController.swift in Sources */,
 				A789713022C3AEBD00DA53F5 /* AppDelegate.swift in Sources */,
 				A789713222C3AEBD00DA53F5 /* FirstViewController.swift in Sources */,
+				A789714B22C3B52900DA53F5 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

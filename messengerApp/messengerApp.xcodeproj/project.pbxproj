@@ -15,6 +15,10 @@
 		A789713C22C3AEBE00DA53F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A789713A22C3AEBE00DA53F5 /* LaunchScreen.storyboard */; };
 		A789714922C3B12500DA53F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A789714822C3B12500DA53F5 /* GoogleService-Info.plist */; };
 		A789714B22C3B52900DA53F5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789714A22C3B52900DA53F5 /* DataService.swift */; };
+		A7AF2DC522CB02A200519B74 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2DC422CB02A200519B74 /* AuthVC.swift */; };
+		A7AF2DC722CB02CC00519B74 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2DC622CB02CC00519B74 /* LoginVC.swift */; };
+		A7AF2DC922CB031E00519B74 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2DC822CB031E00519B74 /* InsetTextField.swift */; };
+		A7AF2DCB22CB081100519B74 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2DCA22CB081100519B74 /* ShadowView.swift */; };
 		F40D028BF061CCB6C13C6879 /* Pods_messengerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C9E8BE57384C661B14FBF4 /* Pods_messengerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,10 @@
 		A789713D22C3AEBE00DA53F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A789714822C3B12500DA53F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A789714A22C3B52900DA53F5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A7AF2DC422CB02A200519B74 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		A7AF2DC622CB02CC00519B74 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A7AF2DC822CB031E00519B74 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		A7AF2DCA22CB081100519B74 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		AFE7C2905534B033CD5FD837 /* Pods-messengerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messengerApp.debug.xcconfig"; path = "Target Support Files/Pods-messengerApp/Pods-messengerApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +104,8 @@
 			children = (
 				A789713122C3AEBD00DA53F5 /* FirstViewController.swift */,
 				A789713322C3AEBD00DA53F5 /* SecondViewController.swift */,
+				A7AF2DC422CB02A200519B74 /* AuthVC.swift */,
+				A7AF2DC622CB02CC00519B74 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +113,8 @@
 		A789714422C3AF1700DA53F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7AF2DC822CB031E00519B74 /* InsetTextField.swift */,
+				A7AF2DCA22CB081100519B74 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,9 +265,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AF2DC522CB02A200519B74 /* AuthVC.swift in Sources */,
 				A789713422C3AEBD00DA53F5 /* SecondViewController.swift in Sources */,
+				A7AF2DC722CB02CC00519B74 /* LoginVC.swift in Sources */,
 				A789713022C3AEBD00DA53F5 /* AppDelegate.swift in Sources */,
+				A7AF2DCB22CB081100519B74 /* ShadowView.swift in Sources */,
 				A789713222C3AEBD00DA53F5 /* FirstViewController.swift in Sources */,
+				A7AF2DC922CB031E00519B74 /* InsetTextField.swift in Sources */,
 				A789714B22C3B52900DA53F5 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

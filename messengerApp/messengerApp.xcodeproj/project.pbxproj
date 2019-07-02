@@ -20,6 +20,7 @@
 		A7AF2DC922CB031E00519B74 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2DC822CB031E00519B74 /* InsetTextField.swift */; };
 		A7AF2DCB22CB081100519B74 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2DCA22CB081100519B74 /* ShadowView.swift */; };
 		A7AF2DCD22CB0B7E00519B74 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2DCC22CB0B7E00519B74 /* AuthService.swift */; };
+		A7AF2DCF22CB81DD00519B74 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2DCE22CB81DD00519B74 /* MeVC.swift */; };
 		F40D028BF061CCB6C13C6879 /* Pods_messengerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C9E8BE57384C661B14FBF4 /* Pods_messengerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		A7AF2DC822CB031E00519B74 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		A7AF2DCA22CB081100519B74 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		A7AF2DCC22CB0B7E00519B74 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A7AF2DCE22CB81DD00519B74 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		AFE7C2905534B033CD5FD837 /* Pods-messengerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messengerApp.debug.xcconfig"; path = "Target Support Files/Pods-messengerApp/Pods-messengerApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				A789713322C3AEBD00DA53F5 /* GroupsVC.swift */,
 				A7AF2DC422CB02A200519B74 /* AuthVC.swift */,
 				A7AF2DC622CB02CC00519B74 /* LoginVC.swift */,
+				A7AF2DCE22CB81DD00519B74 /* MeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AF2DCF22CB81DD00519B74 /* MeVC.swift in Sources */,
 				A7AF2DC522CB02A200519B74 /* AuthVC.swift in Sources */,
 				A789713422C3AEBD00DA53F5 /* GroupsVC.swift in Sources */,
 				A7AF2DC722CB02CC00519B74 /* LoginVC.swift in Sources */,

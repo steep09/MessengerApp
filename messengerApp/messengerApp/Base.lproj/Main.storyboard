@@ -52,13 +52,56 @@
                                 <rect key="frame" x="0.0" y="149" width="414" height="664"/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="uVC-Bf-SSa">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="115" id="uVC-Bf-SSa" customClass="feedCell" customModule="messengerApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uVC-Bf-SSa" id="e37-a6-DNZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="114.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="0zw-rO-1gj">
+                                                    <rect key="frame" x="30" y="21" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="0EP-U9-lTr"/>
+                                                        <constraint firstAttribute="width" constant="60" id="AGn-XM-Vdc"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cNU-TC-LAt">
+                                                    <rect key="frame" x="98" y="15" width="284" height="73"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@messenger.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwr-Lm-4HU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="284" height="18"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="18" id="Yec-AQ-4t4"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="messege content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NW6-I6-QSm">
+                                                            <rect key="frame" x="0.0" y="28" width="284" height="45"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cNU-TC-LAt" firstAttribute="top" secondItem="e37-a6-DNZ" secondAttribute="topMargin" constant="4" id="38o-E4-kJG"/>
+                                                <constraint firstItem="cNU-TC-LAt" firstAttribute="leading" secondItem="0zw-rO-1gj" secondAttribute="trailing" constant="8" id="M0p-Dq-SeS"/>
+                                                <constraint firstItem="0zw-rO-1gj" firstAttribute="top" secondItem="e37-a6-DNZ" secondAttribute="topMargin" constant="10" id="RKE-bJ-TpO"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cNU-TC-LAt" secondAttribute="bottom" constant="16" id="Ugg-er-EY4"/>
+                                                <constraint firstItem="0zw-rO-1gj" firstAttribute="leading" secondItem="e37-a6-DNZ" secondAttribute="leadingMargin" constant="10" id="gZd-Cv-Age"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cNU-TC-LAt" secondAttribute="trailing" constant="12" id="l72-ko-css"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="emailLbl" destination="Wwr-Lm-4HU" id="bko-yp-6Lt"/>
+                                            <outlet property="messegeLbl" destination="NW6-I6-QSm" id="QBa-VG-wgb"/>
+                                            <outlet property="profileImg" destination="0zw-rO-1gj" id="4oY-rV-z06"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -76,6 +119,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="feed-tabIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tableView" destination="ARp-KL-rq3" id="3T8-F7-mW4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTw-oh-PRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473.913043478261" y="-652.23214285714278"/>
+            <point key="canvasLocation" x="1404" y="-642"/>
         </scene>
         <!--Groups-->
         <scene sceneID="wg7-f3-ORb">
@@ -225,7 +271,7 @@
                                 <rect key="frame" x="0.0" y="149" width="414" height="664"/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="CRI-Ht-lAv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupCell" rowHeight="100" id="CRI-Ht-lAv">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CRI-Ht-lAv" id="bIL-g3-qXj">
@@ -322,7 +368,7 @@
                                 <rect key="frame" x="0.0" y="489" width="414" height="324"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="Gpr-2h-A0m">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="70" id="Gpr-2h-A0m">
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gpr-2h-A0m" id="VLk-Hu-CJJ">
@@ -357,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRA-0K-R9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473.913043478261" y="-1.3392857142857142"/>
+            <point key="canvasLocation" x="1404" y="0.0"/>
         </scene>
         <!--AuthVC-->
         <scene sceneID="7EQ-U0-po4">
@@ -458,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UnM-oH-zxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1535" y="0.0"/>
+            <point key="canvasLocation" x="-1390" y="0.0"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="sjC-Yn-uom">
@@ -469,7 +515,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCh-UQ-thu">
-                                <rect key="frame" x="20" y="52" width="16" height="22"/>
+                                <rect key="frame" x="20" y="52" width="21" height="22"/>
                                 <state key="normal" image="close"/>
                                 <connections>
                                     <action selector="closeBtnWasPressed:" destination="VLY-IP-eCP" eventType="touchUpInside" id="A7J-L6-Z8z"/>
@@ -539,7 +585,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YB-92-1uY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775.36231884057975" y="0.0"/>
+            <point key="canvasLocation" x="-697" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

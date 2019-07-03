@@ -17,4 +17,3 @@ class GroupsVC: UIViewController {
 
 
 }
-

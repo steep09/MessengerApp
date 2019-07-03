@@ -26,6 +26,7 @@ class LoginVC: UIViewController {
                     self.dismiss(animated: true, completion: nil)
                 } else {
                     print(String(loginError!.localizedDescription))
+                    print("User name already exist...")
                 }
                 
                 AuthService.instance.registerUser(withEmail: self.emailTxtField.text!, andPassword: self.passwordTxtField.text!, userCreationComplete: { (success, registrationError) in

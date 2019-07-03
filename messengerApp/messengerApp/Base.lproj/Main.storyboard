@@ -144,10 +144,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnL-eX-vd7">
-                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Ybt-hJ-Oen"/>
+                                    <constraint firstAttribute="height" constant="80" id="Ybt-hJ-Oen"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                 <state key="normal" title=" SEND" image="send">
@@ -170,7 +170,7 @@
                             <constraint firstItem="f89-ua-hVL" firstAttribute="top" secondItem="gau-Gl-roI" secondAttribute="top" id="jN0-Qd-8HP"/>
                             <constraint firstItem="TiU-im-RWd" firstAttribute="leading" secondItem="gau-Gl-roI" secondAttribute="leading" constant="20" id="nM1-mY-Ub4"/>
                             <constraint firstItem="TiU-im-RWd" firstAttribute="top" secondItem="f89-ua-hVL" secondAttribute="bottom" constant="20" id="otX-oJ-BEc"/>
-                            <constraint firstItem="gau-Gl-roI" firstAttribute="bottom" secondItem="JnL-eX-vd7" secondAttribute="bottom" id="vbt-F2-Mmq"/>
+                            <constraint firstItem="gau-Gl-roI" firstAttribute="bottom" secondItem="JnL-eX-vd7" secondAttribute="bottom" constant="-34" id="vbt-F2-Mmq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gau-Gl-roI"/>
                     </view>

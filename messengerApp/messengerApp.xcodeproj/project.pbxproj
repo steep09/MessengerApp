@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A703DC2A22CCDBA4009E8413 /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703DC2922CCDBA4009E8413 /* CreateGroupsVC.swift */; };
+		A703DC2C22CCDE5F009E8413 /* userCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703DC2B22CCDE5F009E8413 /* userCell.swift */; };
 		A789713022C3AEBD00DA53F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789712F22C3AEBD00DA53F5 /* AppDelegate.swift */; };
 		A789713222C3AEBD00DA53F5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789713122C3AEBD00DA53F5 /* FeedVC.swift */; };
 		A789713422C3AEBD00DA53F5 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789713322C3AEBD00DA53F5 /* GroupsVC.swift */; };
@@ -33,6 +34,7 @@
 		32C9E8BE57384C661B14FBF4 /* Pods_messengerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_messengerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		806CAFED470A112FE349C144 /* Pods-messengerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messengerApp.release.xcconfig"; path = "Target Support Files/Pods-messengerApp/Pods-messengerApp.release.xcconfig"; sourceTree = "<group>"; };
 		A703DC2922CCDBA4009E8413 /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
+		A703DC2B22CCDE5F009E8413 /* userCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userCell.swift; sourceTree = "<group>"; };
 		A789712C22C3AEBD00DA53F5 /* messengerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messengerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A789712F22C3AEBD00DA53F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A789713122C3AEBD00DA53F5 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				A7AF2DC822CB031E00519B74 /* InsetTextField.swift */,
 				A7AF2DCA22CB081100519B74 /* ShadowView.swift */,
 				A7FF52BC22CC4A2D004893D9 /* feedCell.swift */,
+				A703DC2B22CCDE5F009E8413 /* userCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				A7AF2DC722CB02CC00519B74 /* LoginVC.swift in Sources */,
 				A7AF2DCD22CB0B7E00519B74 /* AuthService.swift in Sources */,
 				A703DC2A22CCDBA4009E8413 /* CreateGroupsVC.swift in Sources */,
+				A703DC2C22CCDE5F009E8413 /* userCell.swift in Sources */,
 				A789713022C3AEBD00DA53F5 /* AppDelegate.swift in Sources */,
 				A7AF2DCB22CB081100519B74 /* ShadowView.swift in Sources */,
 				A7FF52B922CC2190004893D9 /* CreatePostVC.swift in Sources */,

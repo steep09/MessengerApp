@@ -21,18 +21,18 @@ class GroupsVC: UIViewController {
         tableView.dataSource = self
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        DataService.instance.getAllGroups { (returnedGroupsArray) in
-//            self.groupsArray = returnedGroupsArray.reversed()
-//            self.tableView.reloadData()
-//        }
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        DataService.instance.getAllGroups { (returnedGroupsArray) in
+            self.groupsArray = returnedGroupsArray.reversed()
+            self.tableView.reloadData()
+        }
+    }
 }
 extension GroupsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return groupsArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -41,9 +41,8 @@ extension GroupsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "groupCell", for: indexPath) as? groupCell else { return UITableViewCell() }
-        
-        
-        cell.configureCell(title: "Friendster", description: "outdated fossil", memberCount: 5)
+        let group = groupsArray[indexPath.row]
+        cell.configureCell(title: group.title, description: group.description, memberCount: group.memberCount)
         return cell
     }
     

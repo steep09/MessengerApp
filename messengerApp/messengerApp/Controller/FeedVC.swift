@@ -20,7 +20,6 @@ class FeedVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        print(messageArray.count)
     }
     
     override func viewWillAppear(_ animated: Bool) {

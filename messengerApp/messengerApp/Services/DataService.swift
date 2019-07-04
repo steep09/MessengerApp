@@ -79,6 +79,22 @@ class DataService{
         }
     }
     
+//    func getAllGroups(handler: @escaping (_ groups:[Group])-> ()) {
+//        var groupArray = [Group]()
+//        REF_GROUPS.observe(.value) { (groupsSnapshot) in
+//            guard let groupsSnapshot = groupsSnapshot.children.allObjects as? [DataSnapshot] else { return }
+//            
+//            for group in groupsSnapshot {
+//                let title = group.childSnapshot(forPath: "title").value as! String
+//                let description = group.childSnapshot(forPath: "description").value as! String
+//                let memberCount = group.childSnapshot(forPath: "memberCount").value as! Int
+//                let group = Group(title: title, description: description, memberCount: memberCount)
+//                groupArray.append(group)
+//            }
+//            handler(groupArray)
+//        }
+//    }
+    
     func getEmail(forSearchQuery query: String, handler: @escaping(_ emailArray: [String]) -> ()) {
         var emailArray = [String]()
         
@@ -94,5 +110,25 @@ class DataService{
             }
             handler(emailArray)
         }
+    }
+    
+    func getIds(forUsername username: [String], handler: @escaping(_ uidArray: [String]) -> ()) {
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
+            var idArray = [String]()
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapshot {
+                let email = user.childSnapshot(forPath: "email").value as! String
+                
+                if username.contains(email) {
+                    idArray.append(user.key)
+                }
+            }
+            handler(idArray)
+        }
+    }
+    
+    func createGroup(withTitle title: String, andDescription description: String, forUserId id: [String], handler: @escaping(_ groupCreated: Bool) -> ()) {
+        REF_GROUPS.childByAutoId().updateChildValues(["title": title, "description": description, "members": id])
+        handler(true)
     }
 }

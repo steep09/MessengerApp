@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Message{
+class Message {
     
     private var _content: String
     private var _senderId: String

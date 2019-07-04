@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A703DC2A22CCDBA4009E8413 /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703DC2922CCDBA4009E8413 /* CreateGroupsVC.swift */; };
 		A703DC2C22CCDE5F009E8413 /* userCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703DC2B22CCDE5F009E8413 /* userCell.swift */; };
+		A703DC2E22CD9120009E8413 /* groupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703DC2D22CD9120009E8413 /* groupCell.swift */; };
+		A703DC3022CD9287009E8413 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703DC2F22CD9287009E8413 /* Group.swift */; };
 		A789713022C3AEBD00DA53F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789712F22C3AEBD00DA53F5 /* AppDelegate.swift */; };
 		A789713222C3AEBD00DA53F5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789713122C3AEBD00DA53F5 /* FeedVC.swift */; };
 		A789713422C3AEBD00DA53F5 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789713322C3AEBD00DA53F5 /* GroupsVC.swift */; };
@@ -35,6 +37,8 @@
 		806CAFED470A112FE349C144 /* Pods-messengerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messengerApp.release.xcconfig"; path = "Target Support Files/Pods-messengerApp/Pods-messengerApp.release.xcconfig"; sourceTree = "<group>"; };
 		A703DC2922CCDBA4009E8413 /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
 		A703DC2B22CCDE5F009E8413 /* userCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userCell.swift; sourceTree = "<group>"; };
+		A703DC2D22CD9120009E8413 /* groupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupCell.swift; sourceTree = "<group>"; };
+		A703DC2F22CD9287009E8413 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		A789712C22C3AEBD00DA53F5 /* messengerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messengerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A789712F22C3AEBD00DA53F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A789713122C3AEBD00DA53F5 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				A7AF2DCA22CB081100519B74 /* ShadowView.swift */,
 				A7FF52BC22CC4A2D004893D9 /* feedCell.swift */,
 				A703DC2B22CCDE5F009E8413 /* userCell.swift */,
+				A703DC2D22CD9120009E8413 /* groupCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				A7FF52C222CC4FB4004893D9 /* Message.swift */,
+				A703DC2F22CD9287009E8413 /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,12 +297,14 @@
 			files = (
 				A7FF52BB22CC3B43004893D9 /* UIViewExt.swift in Sources */,
 				A7AF2DCF22CB81DD00519B74 /* MeVC.swift in Sources */,
+				A703DC2E22CD9120009E8413 /* groupCell.swift in Sources */,
 				A7FF52BD22CC4A2D004893D9 /* feedCell.swift in Sources */,
 				A7AF2DC522CB02A200519B74 /* AuthVC.swift in Sources */,
 				A789713422C3AEBD00DA53F5 /* GroupsVC.swift in Sources */,
 				A7AF2DC722CB02CC00519B74 /* LoginVC.swift in Sources */,
 				A7AF2DCD22CB0B7E00519B74 /* AuthService.swift in Sources */,
 				A703DC2A22CCDBA4009E8413 /* CreateGroupsVC.swift in Sources */,
+				A703DC3022CD9287009E8413 /* Group.swift in Sources */,
 				A703DC2C22CCDE5F009E8413 /* userCell.swift in Sources */,
 				A789713022C3AEBD00DA53F5 /* AppDelegate.swift in Sources */,
 				A7AF2DCB22CB081100519B74 /* ShadowView.swift in Sources */,

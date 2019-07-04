@@ -10,10 +10,42 @@ import UIKit
 
 class GroupsVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var groupsArray = [Group]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-
-
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        DataService.instance.getAllGroups { (returnedGroupsArray) in
+//            self.groupsArray = returnedGroupsArray.reversed()
+//            self.tableView.reloadData()
+//        }
+//    }
+}
+extension GroupsVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(115)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "groupCell", for: indexPath) as? groupCell else { return UITableViewCell() }
+        
+        
+        cell.configureCell(title: "Friendster", description: "outdated fossil", memberCount: 5)
+        return cell
+    }
+    
+    
 }
